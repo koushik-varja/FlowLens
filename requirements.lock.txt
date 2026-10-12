@@ -1,0 +1,53 @@
+# Generated from the actually installed dependency graph in the final verification environment.
+# Exact versions only; regenerate intentionally when upgrading dependencies.
+alembic==1.18.4
+annotated-doc==0.0.4
+annotated-types==0.8.0
+anyio==4.13.0
+certifi==2026.5.20
+click==8.1.8
+fastapi==0.128.2
+greenlet==3.5.1
+h11==0.16.0
+httpcore==1.0.9
+httptools==0.8.0
+httpx==0.28.1
+idna==3.17
+iniconfig==2.3.0
+joblib==1.5.3
+mako==1.3.12
+markupsafe==3.0.3
+networkx==3.6.1
+numpy==2.3.5
+packaging==25.0
+pandas==2.2.3
+pluggy==1.6.0
+pydantic==2.13.5
+pydantic-core==2.46.5
+pygments==2.20.0
+pytest==9.0.2
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.2
+python-multipart==0.0.29
+pytz==2026.2
+pyyaml==6.0.3
+scikit-learn==1.8.0
+scipy==1.17.0
+six==1.17.0
+sqlalchemy==2.0.50
+starlette==0.50.0
+threadpoolctl==3.6.0
+typing-extensions==4.16.0
+typing-inspection==0.4.4
+tzdata==2026.2
+uvicorn==0.48.0
+uvloop==0.22.1
+watchfiles==1.2.0
+websockets==16.0
+
+# Exact repository pins not installed in this verification container; retained for production/dev setup.
+# Their transitive dependencies could not be freshly resolved because package-registry access is unavailable.
+mypy==1.15.0
+psycopg==3.2.9
+psycopg-binary==3.2.9
+ruff==0.11.13

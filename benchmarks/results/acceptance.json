@@ -1,0 +1,278 @@
+{
+  "A_noop": {
+    "passed": true,
+    "median_cycle_delta_hours": 0.0,
+    "sla_delta_pp": 0.0,
+    "p95_delta_hours": 0.0,
+    "business_value": 0.0
+  },
+  "B_remove_activity": {
+    "passed": true,
+    "baseline_median": 41.6501,
+    "proposed_median": 29.738
+  },
+  "C_selective_automation": {
+    "passed": true,
+    "eligible_examples_changed": 10,
+    "noneligible_examples_unchanged": 15
+  },
+  "D_resource_capacity": {
+    "passed": true,
+    "capacity1": {
+      "average_queue_delay_hours": 4.75,
+      "p95_queue_delay_hours": 9.025,
+      "utilization": 1.0,
+      "makespan_hours": 12
+    },
+    "capacity2": {
+      "average_queue_delay_hours": 1.8,
+      "p95_queue_delay_hours": 3.6,
+      "utilization": 0.983607,
+      "makespan_hours": 6.1
+    }
+  },
+  "E_parallelization": {
+    "passed": true,
+    "baseline_median": 11.0,
+    "proposed_median": 7.0
+  },
+  "F_baseline_fidelity": {
+    "passed": true,
+    "status": "HIGH",
+    "observed": {
+      "mean": 49.2358,
+      "median": 41.7606,
+      "p90": 85.4507,
+      "p95": 100.2356,
+      "sla": 0.612
+    },
+    "simulated_baseline": {
+      "mean": 49.2338,
+      "median": 41.7253,
+      "p90": 85.3977,
+      "p95": 100.2039,
+      "sla": 0.6078
+    },
+    "relative_error": {
+      "mean": 0.0,
+      "median": 0.0008,
+      "p90": 0.0006,
+      "p95": 0.0003
+    },
+    "sla_absolute_error": 0.0042,
+    "variant_mix": {
+      "observed_top": [
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.63
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Rework",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.134
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Invoice Correction",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.096
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Rejection",
+            "Rework",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.084
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Rework",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Invoice Correction",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.02
+        }
+      ],
+      "simulated_top": [
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.6345
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Rework",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.1288
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Invoice Correction",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.0976
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Rejection",
+            "Rework",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.0852
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Rework",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Invoice Correction",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.0193
+        }
+      ]
+    },
+    "transition_delay_distribution": {
+      "observed_median": 6.9524,
+      "observed_p95": 19.067,
+      "simulated_median": 6.957,
+      "simulated_p95": 19.1962
+    },
+    "warning": null
+  },
+  "G_ml_leakage": {
+    "passed": true,
+    "overlap_count": 0,
+    "train_cases": 400,
+    "test_cases": 100,
+    "metrics": {
+      "precision": 0.7815,
+      "recall": 0.7381,
+      "f1": 0.7592,
+      "roc_auc": 0.8942,
+      "pr_auc": 0.8695
+    },
+    "remaining_metrics": {
+      "mae_hours": 7.165,
+      "median_absolute_error_hours": 4.505,
+      "rmse_hours": 11.859
+    }
+  },
+  "H_active_case": {
+    "passed": true,
+    "cutoff": "2026-03-01T08:09:29.299456+00:00",
+    "active_cases": 15,
+    "model_version": "20261012T144150Z-4fc3e795"
+  },
+  "I_activity_sla": {
+    "passed": true,
+    "assessed_cases": 500,
+    "violations": 244
+  },
+  "J_business_value": {
+    "passed": true,
+    "lead_time_saved": 2,
+    "labor_savings": 0.0
+  },
+  "K_admin_security": {
+    "passed": true,
+    "status_without_admin_key": 503
+  },
+  "L_throughput_invariance": {
+    "passed": true,
+    "cohort_sizes": [
+      50,
+      100,
+      200,
+      400
+    ],
+    "baseline_throughput_cases_per_30d": [
+      184.5,
+      184.5,
+      184.5,
+      184.5
+    ],
+    "relative_spread": 0.0,
+    "methodology": {
+      "metric": "SIMULATED 30-day completion volume under calibrated historical arrivals",
+      "arrival_model": "Poisson arrivals calibrated from historical case-start timestamps",
+      "historical_arrival_rate_cases_per_hour": 0.25116607,
+      "historical_arrival_rate_cases_per_30d": 180.8396,
+      "arrival_observation_span_hours": 1986.7333,
+      "simulation_horizon_hours": 720.0,
+      "warmup_hours": 100.2356,
+      "paired_baseline_proposed_arrivals": true,
+      "independent_of_analysis_cohort_size": true
+    }
+  },
+  "summary": {
+    "passed": true,
+    "executed": 12
+  }
+}

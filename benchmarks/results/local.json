@@ -1,0 +1,286 @@
+{
+  "timestamp": "2026-10-12T14:38:11.274003+00:00",
+  "environment": {
+    "os": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+    "cpu": "not reported",
+    "ram_mb": 7773,
+    "python": "3.12.15"
+  },
+  "results": [
+    {
+      "cases": 1500,
+      "events": 10431,
+      "activities": 9,
+      "import_seconds": 0.632065,
+      "graph_seconds": 0.196755,
+      "variants_seconds": 0.043033,
+      "bottlenecks_seconds": 0.188185,
+      "sla_seconds": 0.152431,
+      "simulation_runs": 60,
+      "paired_monte_carlo_seconds": 2.395671,
+      "baseline_fidelity_status": "HIGH",
+      "baseline_throughput_cases_per_30d": 542.0,
+      "proposed_throughput_cases_per_30d": 543.0,
+      "throughput_methodology": {
+        "metric": "SIMULATED 30-day completion volume under calibrated historical arrivals",
+        "arrival_model": "Poisson arrivals calibrated from historical case-start timestamps",
+        "historical_arrival_rate_cases_per_hour": 0.75171128,
+        "historical_arrival_rate_cases_per_30d": 541.2321,
+        "arrival_observation_span_hours": 1994.1167,
+        "simulation_horizon_hours": 720.0,
+        "warmup_hours": 99.794,
+        "paired_baseline_proposed_arrivals": true,
+        "independent_of_analysis_cohort_size": true
+      },
+      "peak_python_memory_mb": 19.839
+    },
+    {
+      "cases": 15000,
+      "events": 103853,
+      "activities": 9,
+      "import_seconds": 5.59115,
+      "graph_seconds": 1.645009,
+      "variants_seconds": 0.454041,
+      "bottlenecks_seconds": 1.730864,
+      "sla_seconds": 1.714245,
+      "simulation_runs": 30,
+      "paired_monte_carlo_seconds": 10.931326,
+      "baseline_fidelity_status": "HIGH",
+      "baseline_throughput_cases_per_30d": 5394.5,
+      "proposed_throughput_cases_per_30d": 5398.0,
+      "throughput_methodology": {
+        "metric": "SIMULATED 30-day completion volume under calibrated historical arrivals",
+        "arrival_model": "Poisson arrivals calibrated from historical case-start timestamps",
+        "historical_arrival_rate_cases_per_hour": 7.50025003,
+        "historical_arrival_rate_cases_per_30d": 5400.18,
+        "arrival_observation_span_hours": 1999.8,
+        "simulation_horizon_hours": 720.0,
+        "warmup_hours": 101.5623,
+        "paired_baseline_proposed_arrivals": true,
+        "independent_of_analysis_cohort_size": true
+      },
+      "peak_python_memory_mb": 196.048
+    }
+  ],
+  "ml": {
+    "training_seconds": 3.335707,
+    "inference_requests": 100,
+    "inference_p50_ms": 15.8416,
+    "inference_p95_ms": 18.0727,
+    "classification_metrics": {
+      "precision": 0.8182,
+      "recall": 0.8257,
+      "f1": 0.8219,
+      "roc_auc": 0.9425,
+      "pr_auc": 0.9198
+    },
+    "remaining_time_metrics": {
+      "mae_hours": 7.03,
+      "median_absolute_error_hours": 4.278,
+      "rmse_hours": 11.808
+    }
+  },
+  "api_latency": {
+    "requests": 25,
+    "graph_api_p50_ms": 299.498,
+    "graph_api_p95_ms": 345.448
+  },
+  "baseline_fidelity": {
+    "status": "HIGH",
+    "observed": {
+      "mean": 48.2459,
+      "median": 41.0743,
+      "p90": 81.1447,
+      "p95": 99.794,
+      "sla": 0.638
+    },
+    "simulated_baseline": {
+      "mean": 48.1477,
+      "median": 40.8019,
+      "p90": 81.1448,
+      "p95": 98.7557,
+      "sla": 0.6432
+    },
+    "relative_error": {
+      "mean": 0.002,
+      "median": 0.0066,
+      "p90": 0.0,
+      "p95": 0.0104
+    },
+    "sla_absolute_error": 0.0052,
+    "variant_mix": {
+      "observed_top": [
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.64
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Rework",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.1313
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Rejection",
+            "Rework",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.088
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Invoice Correction",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.0873
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Rejection",
+            "Rework",
+            "Manager Approval",
+            "Finance Review",
+            "Rework",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.0233
+        }
+      ],
+      "simulated_top": [
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.6407
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Rework",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.1264
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Invoice Correction",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.0885
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Rejection",
+            "Rework",
+            "Manager Approval",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.0882
+        },
+        {
+          "path": [
+            "Request",
+            "Manager Approval",
+            "Rejection",
+            "Rework",
+            "Manager Approval",
+            "Finance Review",
+            "Rework",
+            "Finance Review",
+            "Purchase Order",
+            "Invoice",
+            "Payment"
+          ],
+          "share": 0.0248
+        }
+      ]
+    },
+    "transition_delay_distribution": {
+      "observed_median": 6.8324,
+      "observed_p95": 18.9331,
+      "simulated_median": 6.8193,
+      "simulated_p95": 18.8602
+    },
+    "warning": null
+  },
+  "throughput_invariance": {
+    "cohort_sizes": [
+      50,
+      100,
+      200,
+      400
+    ],
+    "baseline_throughput_cases_per_30d": [
+      548.5,
+      548.5,
+      548.5,
+      548.5
+    ],
+    "relative_spread": 0.0,
+    "passes_non_scaling_check": true,
+    "methodology": {
+      "metric": "SIMULATED 30-day completion volume under calibrated historical arrivals",
+      "arrival_model": "Poisson arrivals calibrated from historical case-start timestamps",
+      "historical_arrival_rate_cases_per_hour": 0.75171128,
+      "historical_arrival_rate_cases_per_30d": 541.2321,
+      "arrival_observation_span_hours": 1994.1167,
+      "simulation_horizon_hours": 720.0,
+      "warmup_hours": 99.794,
+      "paired_baseline_proposed_arrivals": true,
+      "independent_of_analysis_cohort_size": true
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "status": "HIGH",
+  "observed": {
+    "mean": 48.2459,
+    "median": 41.0743,
+    "p90": 81.1447,
+    "p95": 99.794,
+    "sla": 0.638
+  },
+  "simulated_baseline": {
+    "mean": 48.1477,
+    "median": 40.8019,
+    "p90": 81.1448,
+    "p95": 98.7557,
+    "sla": 0.6432
+  },
+  "relative_error": {
+    "mean": 0.002,
+    "median": 0.0066,
+    "p90": 0.0,
+    "p95": 0.0104
+  },
+  "sla_absolute_error": 0.0052,
+  "variant_mix": {
+    "observed_top": [
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.64
+      },
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Finance Review",
+          "Rework",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.1313
+      },
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Rejection",
+          "Rework",
+          "Manager Approval",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.088
+      },
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Invoice Correction",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.0873
+      },
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Rejection",
+          "Rework",
+          "Manager Approval",
+          "Finance Review",
+          "Rework",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.0233
+      }
+    ],
+    "simulated_top": [
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.6407
+      },
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Finance Review",
+          "Rework",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.1264
+      },
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Invoice Correction",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.0885
+      },
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Rejection",
+          "Rework",
+          "Manager Approval",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.0882
+      },
+      {
+        "path": [
+          "Request",
+          "Manager Approval",
+          "Rejection",
+          "Rework",
+          "Manager Approval",
+          "Finance Review",
+          "Rework",
+          "Finance Review",
+          "Purchase Order",
+          "Invoice",
+          "Payment"
+        ],
+        "share": 0.0248
+      }
+    ]
+  },
+  "transition_delay_distribution": {
+    "observed_median": 6.8324,
+    "observed_p95": 18.9331,
+    "simulated_median": 6.8193,
+    "simulated_p95": 18.8602
+  },
+  "warning": null
+}
